@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 
-def buttonPressed(buttonNumber):
+def button_pressed(buttonNumber):
     pass
 
 
