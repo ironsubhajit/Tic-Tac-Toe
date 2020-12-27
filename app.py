@@ -27,7 +27,7 @@ btn9.grid(row=2, column=2, ipadx=50, ipady=50)
 player = 1
 
 
-def button_pressed(buttonNumber):
+def button_pressed(button_number):
     global player
     if player == 1:
         if buttonNumber == 1:
@@ -85,5 +85,6 @@ def button_pressed(buttonNumber):
         elif buttonNumber == 9:
             btn9.config(text='o')
             player = 1
+
 
 root.mainloop()
