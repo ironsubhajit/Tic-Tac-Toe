@@ -7,7 +7,7 @@ def button_pressed(buttonNumber):
 
 
 root = tk.Tk()
-root.geometry("500x300")
+root.geometry("530x400")
 btn1 = ttk.Button(root, text='', command=lambda : buttonPressed(1))
 btn2 = ttk.Button(root, text='', command=lambda : buttonPressed(2))
 btn3 = ttk.Button(root, text='', command=lambda : buttonPressed(3))
