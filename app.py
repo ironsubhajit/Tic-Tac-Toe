@@ -57,5 +57,33 @@ def button_pressed(buttonNumber):
         elif buttonNumber == 9:
             btn9.config(text='x')
             player = 2
+    elif player == 2:
+        if buttonNumber == 1:
+            btn1.config(text='o')
+            player = 1
+        elif buttonNumber == 2:
+            btn2.config(text='o')
+            player = 1
+        elif buttonNumber == 3:
+            btn3.config(text='o')
+            player = 1
+        elif buttonNumber == 4:
+            btn4.config(text='o')
+            player = 1
+        elif buttonNumber == 5:
+            btn5.config(text='o')
+            player = 1
+        elif buttonNumber == 6:
+            btn6.config(text='o')
+            player = 1
+        elif buttonNumber == 7:
+            btn7.config(text='o')
+            player = 1
+        elif buttonNumber == 8:
+            btn8.config(text='o')
+            player = 1
+        elif buttonNumber == 9:
+            btn9.config(text='o')
+            player = 1
 
 root.mainloop()
