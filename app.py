@@ -30,59 +30,59 @@ player = 1
 def button_pressed(button_number):
     global player
     if player == 1:
-        if buttonNumber == 1:
+        if button_number == 1:
             btn1.config(text='x')
             player = 2
-        elif buttonNumber == 2:
+        elif button_number == 2:
             btn2.config(text='x')
             player = 2
-        elif buttonNumber == 3:
+        elif button_number == 3:
             btn3.config(text='x')
             player = 2
-        elif buttonNumber == 4:
+        elif button_number == 4:
             btn4.config(text='x')
             player = 2
-        elif buttonNumber == 5:
+        elif button_number == 5:
             btn5.config(text='x')
             player = 2
-        elif buttonNumber == 6:
+        elif button_number == 6:
             btn6.config(text='x')
             player = 2
-        elif buttonNumber == 7:
+        elif button_number == 7:
             btn7.config(text='x')
             player = 2
-        elif buttonNumber == 8:
+        elif button_number == 8:
             btn8.config(text='x')
             player = 2
-        elif buttonNumber == 9:
+        elif button_number == 9:
             btn9.config(text='x')
             player = 2
     elif player == 2:
-        if buttonNumber == 1:
+        if button_number == 1:
             btn1.config(text='o')
             player = 1
-        elif buttonNumber == 2:
+        elif button_number == 2:
             btn2.config(text='o')
             player = 1
-        elif buttonNumber == 3:
+        elif button_number == 3:
             btn3.config(text='o')
             player = 1
-        elif buttonNumber == 4:
+        elif button_number == 4:
             btn4.config(text='o')
             player = 1
-        elif buttonNumber == 5:
+        elif button_number == 5:
             btn5.config(text='o')
             player = 1
-        elif buttonNumber == 6:
+        elif button_number == 6:
             btn6.config(text='o')
             player = 1
-        elif buttonNumber == 7:
+        elif button_number == 7:
             btn7.config(text='o')
             player = 1
-        elif buttonNumber == 8:
+        elif button_number == 8:
             btn8.config(text='o')
             player = 1
-        elif buttonNumber == 9:
+        elif button_number == 9:
             btn9.config(text='o')
             player = 1
 
