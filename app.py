@@ -27,6 +27,31 @@ btn9.grid(row=2, column=2, ipadx=50, ipady=50)
 player = 1
 
 
+def check_winner():
+    if (
+            btn1['text'] == 'o' and btn2['text'] == 'o' and btn3['text'] == 'o' or
+            btn4['text'] == 'o' and btn5['text'] == 'o' and btn6['text'] == 'o' or
+            btn7['text'] == 'o' and btn8['text'] == 'o' and btn9['text'] == 'o' or
+            btn1['text'] == 'o' and btn5['text'] == 'o' and btn9['text'] == 'o' or
+            btn7['text'] == 'o' and btn5['text'] == 'o' and btn3['text'] == 'o' or
+            btn1['text'] == 'o' and btn4['text'] == 'o' and btn7['text'] == 'o' or
+            btn2['text'] == 'o' and btn5['text'] == 'o' and btn8['text'] == 'o' or
+            btn3['text'] == 'o' and btn6['text'] == 'o' and btn9['text'] == 'o'
+    ):
+        messagebox._show("Winner of The Game", "Player \'o\' is the winner")
+    elif (
+            btn1['text'] == 'x' and btn2['text'] == 'x' and btn3['text'] == 'x' or
+            btn4['text'] == 'x' and btn5['text'] == 'x' and btn6['text'] == 'x' or
+            btn7['text'] == 'x' and btn8['text'] == 'x' and btn9['text'] == 'x' or
+            btn1['text'] == 'x' and btn5['text'] == 'x' and btn9['text'] == 'x' or
+            btn7['text'] == 'x' and btn5['text'] == 'x' and btn3['text'] == 'x' or
+            btn1['text'] == 'x' and btn4['text'] == 'x' and btn7['text'] == 'x' or
+            btn2['text'] == 'x' and btn5['text'] == 'x' and btn8['text'] == 'x' or
+            btn3['text'] == 'x' and btn6['text'] == 'x' and btn9['text'] == 'x'
+    ):
+        messagebox._show("Winner of The Game", "Player \'x\' is the winner")
+
+
 def button_pressed(button_number):
     global player
     if player == 1:
@@ -85,6 +110,7 @@ def button_pressed(button_number):
         elif button_number == 9:
             btn9.config(text='o')
             player = 1
+    check_winner()
 
 
 root.mainloop()
